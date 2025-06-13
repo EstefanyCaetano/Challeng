@@ -23,15 +23,29 @@ import noticia12 from './img/noticia12.webp'
 import noticia13 from './img/noticia13.webp'
 import noticia14 from './img/noticia14.webp'
 
+import carrossel1 from './img/carrossel1.webp'
+import carrossel2 from './img/carrossel2.webp'
+import carrossel4 from './img/carrossel4.webp'
+import carrossel5 from './img/carrossel5.webp'
+import carrossel6 from './img/carrossel6.webp'
+import carrossel8 from './img/carrossel8.webp'
+import carrossel9 from './img/carrossel9.webp'
+import carrossel10 from './img/carrossel10.webp'
+import carrossel11 from './img/carrossel11.webp'
+import carrossel12 from './img/carrossel12.webp'
+import carrossel13 from './img/carrossel13.webp'
+import carrossel14 from './img/carrossel14.webp'
+import carrossel15 from './img/carrossel15.webp'
+import component from './img/component.png'
+
+
 function Inicial() {
 
   return (
-
     <>
-
-
+    
     {/* MENU SUPERIOR ---------------------------------------------------*/}
-     <div className="container-menu">
+    <div className="container-menu">
       <div className="container fixed-top">
         <div className="menu-flex">
           
@@ -149,10 +163,13 @@ function Inicial() {
           <div class="info-agen row g-2">    
 
           <div className='informacoes-agendamento col'>
-            <div className=''>
+            <img src={component}   style={{width: "45px", height: "45px", objectFit: "cover", borderRadius: "8px", margin: "16px"}}></img>
+
+            <div className=''>    
               <p className='text-agen'>Tempo estimado para atendimento <br/> médico após cadastro</p>
               <spam>SÁBADO 26/04/2025 - 20:05</spam>
             </div>
+
           </div>
 
           <div className='informacoes-tempo'>
@@ -180,42 +197,279 @@ function Inicial() {
                 <div className='button-fila'>01:38 - Fila: 1</div>
                 Pouca Urgência
               </button>
-             <p className='text-agendamento'>* Informamos que o tempo de espera pode variar em decorrência da complexidade de atendimento <br /> dos pacientes ou emergências. Clique aqui para conferir os dias e horários mais movimentados do hospital.</p> 
+             <p className='text-agendamento'>* Informamos que o tempo de espera pode variar em decorrência da complexidade de atendimento <br /> dos pacientes ou emergências. <a href="">Clique aqui</a> para conferir os dias e horários mais movimentados do hospital.</p> 
         </div>
       </div>
 
     </div>
   </div>
 
-  {/* <div className='background'> */}
-
   <div className='container-espacamento'>
 
   {/* CORROSSEL ------------------------------------- */}
     <div id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-inner">
-        <div className="carousel-item active" data-bs-interval="10000">
+
+      <div className="carousel-item active" data-bs-interval="10000">
           <div className="container">
-            <div className="row align-items-center" style={{ minHeight: '400px' }}>
-              <div className="col-12 col-md-6">
-                <img src={noticia12} className="img-fluid w-100 h-100 object-fit-cover" alt="Imagem do Carrossel" style={{ objectFit: 'cover' }}/>
+            <div className="row flex-nowrap align-items-center" style={{ minHeight: '400px' }}>
+              <div className="img-carrossel col-md-6 p-0">
+                <img src={carrossel1} className="img-fluid w-100 h-100 object-fit-cover" alt="Imagem do Carrossel" style={{ objectFit: 'cover' }}/>
               </div>
-              <div className="noticia-carrossel col-12 col-md-6 p-4">
+              <div className="noticia-carrossel col-md-6 p-4">
                 <div className="conteudo-carrosel">
-                  <h2 className="titulo-carrossel">Novo Serviço: Ambulatório de Prematuridade e Alto Risco</h2>
-                  <p className="conteudo-carrossel">Agora, o Centro de Excelência oferece um atendimento especializado para bebês prematuros e suas famílias. Com uma equipe multidisciplinar, proporcionamos cuidado completo e humanizado.</p>
-                  <button className="button-carrossel">Teste</button>
+                  <h2 className="titulo-carrossel">3º Sabará Pediatric Innovation Day</h2>
+                  <p className="conteudo-carrossel">Acesse o Edital aqui e inscreva-se!</p>
+                  <button className="button-carrossel">SAIBA MAIS</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-    <div className="carousel-item" data-bs-interval="2000">    </div>
+        <div className="carousel-item" data-bs-interval="10000">
+          <div className="container">
+            <div className="row flex-nowrap  align-items-center" style={{ minHeight: '400px' }}>
+              <div className="img-carrossel col-md-6 p-0">
+                <img src={carrossel2} className="img-fluid w-100 h-100 object-fit-cover" alt="Imagem do Carrossel" style={{ objectFit: 'cover' }}/>
+              </div>
+              <div className="noticia-carrossel col-md-6 p-4">
+                <div className="conteudo-carrosel">
+                  <h2 className="titulo-carrossel">"Cerimônia do Sino" - Episódio 4</h2>
+                  <p className="conteudo-carrossel">No último episódio da série, Márcia Angelis, mãe da paciente Maria Fernanda, fala sobre a importância da equipe de Child Life durante o tratamento de sua filha.</p>
+                  <button className="button-carrossel">SAIBA MAIS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <div className="carousel-item">
-    </div>
+        <div className="carousel-item" data-bs-interval="10000">
+          <div className="container">
+            <div className="row flex-nowrap  align-items-center" style={{ minHeight: '400px' }}>
+              <div className="img-carrossel col-md-6 p-0">
+                  <img src={noticia6} className="img-fluid w-100 h-100 object-fit-cover" alt="Imagem do Carrossel" style={{ objectFit: 'cover' }}/>
+                </div>
+                <div className="noticia-carrossel col-md-6 p-4">
+                  <div className="conteudo-carrosel">
+                    <h2 className="titulo-carrossel">Entenda a Síndrome de Down com a Dra. Renata Zampol</h2>
+                    <p className="conteudo-carrossel">No Blog de Saúde da Veja, a Dra. Renata Mazzotti Zampol, gerente médica da Unidade de Internação do Sabará, fala sobre a importância do acolhimento, os cuidados e os avanços no entendimento da síndrome de Down.</p>
+                    <button className="button-carrossel">SAIBA MAIS</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div className="carousel-item" data-bs-interval="10000">
+          <div className="container">
+            <div className="row flex-nowrap  align-items-center" style={{ minHeight: '400px' }}>
+              <div className="img-carrossel col-md-6 p-0">
+                <img src={carrossel4} className="img-fluid w-100 h-100 object-fit-cover" alt="Imagem do Carrossel" style={{ objectFit: 'cover' }}/>
+              </div>
+              <div className="noticia-carrossel col-md-6 p-4">
+                <div className="conteudo-carrosel">
+                  <h2 className="titulo-carrossel">Manual da Disfagia</h2>
+                  <p className="conteudo-carrossel">Conheça um pouco mais sobre a Disfagia e faça o download do manual elaborado por nossa equipe de Fonoaudiologia.</p>
+                  <button className="button-carrossel">SAIBA MAIS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="carousel-item" data-bs-interval="10000">
+          <div className="container">
+            <div className="row flex-nowrap  align-items-center" style={{ minHeight: '400px' }}>              <div className="img-carrossel col-md-6 p-0">
+                <img src={carrossel5} className="img-fluid w-100 h-100 object-fit-cover" alt="Imagem do Carrossel" style={{ objectFit: 'cover' }}/>
+              </div>
+              <div className="noticia-carrossel col-md-6 p-4">
+                <div className="conteudo-carrosel">
+                  <h2 className="titulo-carrossel">“Infância sem telas” – Episódio 6</h2>
+                  <p className="conteudo-carrossel">Neste episódio, Dr. Carlos Takeuchi, neurologista do Sabará, alerta que diversos estudos ao redor do mundo indicam atrasos cognitivos e distúrbios de aprendizagem associados ao uso excessivo de telas, principalmente entre as crianças na primeira infância.</p>
+                  <button className="button-carrossel">SAIBA MAIS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <div className="carousel-item" data-bs-interval="10000">
+          <div className="container">
+            <div className="row flex-nowrap  align-items-center" style={{ minHeight: '400px' }}>             <div className="img-carrossel col-md-6 p-0">
+                <img src={carrossel6} className="img-fluid w-100 h-100 object-fit-cover" alt="Imagem do Carrossel" style={{ objectFit: 'cover' }}/>
+              </div>
+              <div className="noticia-carrossel col-md-6 p-4">
+                <div className="conteudo-carrosel">
+                  <h2 className="titulo-carrossel">Novo Serviço: Ambulatório de Prematuridade e Alto Risco</h2>
+                  <p className="conteudo-carrossel">Agora, o Centro de Excelência oferece um atendimento especializado para bebês prematuros e suas famílias. Com uma equipe multidisciplinar, proporcionamos cuidado completo e humanizado.</p>
+                  <button className="button-carrossel">SAIBA MAIS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div className="carousel-item" data-bs-interval="10000">
+          <div className="container">
+            <div className="row flex-nowrap  align-items-center" style={{ minHeight: '400px' }}>
+              <div className="img-carrossel col-md-6 p-0">
+                <img src={noticia12} className="img-fluid w-100 h-100 object-fit-cover" alt="Imagem do Carrossel" style={{ objectFit: 'cover' }}/>
+              </div>
+              <div className="noticia-carrossel col-md-6 p-4">
+                <div className="conteudo-carrosel">
+                  <h2 className="titulo-carrossel">Uso Consciente das Telas: O Exemplo Começa em Casa</h2>
+                  <p className="conteudo-carrossel">As crianças estão cada vez mais expostas ao mundo digital. No Blog da Veja Saúde, o Dr. Felipe Lora, CEO do Sabará Hospital Infantil, discute como o nosso exemplo pode incentivar um uso mais responsável das telas.</p>
+                  <button className="button-carrossel">SAIBA MAIS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="carousel-item" data-bs-interval="10000">
+          <div className="container">
+            <div className="row flex-nowrap  align-items-center" style={{ minHeight: '400px' }}>
+              <div className="img-carrossel col-md-6 p-0">
+                <img src={carrossel8} className="img-fluid w-100 h-100 object-fit-cover" alt="Imagem do Carrossel" style={{ objectFit: 'cover' }}/>
+              </div>
+              <div className="noticia-carrossel col-md-6 p-4">
+                <div className="conteudo-carrosel">
+                  <h2 className="titulo-carrossel">Conheça o novo restaurante do Sabará, o Encantário</h2>
+                  <p className="conteudo-carrossel">Pensando na saúde das crianças, o local conta com um menu adaptado para diferentes restrições alimentares, além de refeições para acompanhantes e familiares.</p>
+                  <button className="button-carrossel">SAIBA MAIS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="carousel-item" data-bs-interval="10000">
+          <div className="container">
+            <div className="row flex-nowrap  align-items-center" style={{ minHeight: '400px' }}>
+              <div className="img-carrossel col-md-6 p-0">
+                <img src={carrossel9} className="img-fluid w-100 h-100 object-fit-cover" alt="Imagem do Carrossel" style={{ objectFit: 'cover' }}/>
+              </div>
+              <div className="noticia-carrossel  col-md-6 p-4">
+                <div className="conteudo-carrosel">
+                  <h2 className="titulo-carrossel">Nova Sala de Amamentação</h2>
+                  <p className="conteudo-carrossel">Criamos um espaço acolhedor para facilitar os períodos de espera das mães e seus pequenos.</p>
+                  <button className="button-carrossel">SAIBA MAIS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="carousel-item" data-bs-interval="10000">
+          <div className="container">
+            <div className="row flex-nowrap  align-items-center" style={{ minHeight: '400px' }}>
+              <div className="img-carrossel col-md-6 p-0">
+                <img src={carrossel10} className="img-fluid w-100 h-100 object-fit-cover" alt="Imagem do Carrossel" style={{ objectFit: 'cover' }}/>
+              </div>
+              <div className="noticia-carrossel col-md-6 p-4">
+                <div className="conteudo-carrosel">
+                  <h2 className="titulo-carrossel">Sabará Digital: Saúde Infantil na Palma da Sua Mão</h2>
+                  <p className="conteudo-carrossel">Facilite o cuidado com seu filho! Com o app Sabará Digital, você agenda consultas, acessa documentos médicos e consulta exames com rapidez e segurança. Tudo isso gratuitamente e na palma da sua mão.</p>
+                  <button className="button-carrossel">SAIBA MAIS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+  
+        <div className="carousel-item" data-bs-interval="10000">
+          <div className="container">
+           <div className="row flex-nowrap  align-items-center" style={{ minHeight: '400px' }}>
+              <div className="img-carrossel col-md-6 p-0">
+                <img src={carrossel11} className="img-fluid w-100 h-100 object-fit-cover" alt="Imagem do Carrossel" style={{ objectFit: 'cover' }}/>
+              </div>
+              <div className="noticia-carrossel col-md-6 p-4">
+                <div className="conteudo-carrosel">
+                  <h2 className="titulo-carrossel">Cozinhando com Saramira: Receitas Seguras para as Crianças</h2>
+                  <p className="conteudo-carrossel">Descubra dicas e receitas para uma alimentação segura e sem riscos para as crianças. Clique e assista agora!</p>
+                  <button className="button-carrossel">SAIBA MAIS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="carousel-item" data-bs-interval="10000">
+          <div className="container">
+            <div className="row flex-nowrap  align-items-center" style={{ minHeight: '400px' }}>
+              <div className="img-carrossel col-md-6 p-0">
+                <img src={carrossel12} className="img-fluid w-100 h-100 object-fit-cover" alt="Imagem do Carrossel" style={{ objectFit: 'cover' }}/>
+              </div>
+              <div className="noticia-carrossel col-md-6 p-4">
+                <div className="conteudo-carrosel">
+                  <h2 className="titulo-carrossel">Lançamos o Núcleo de Apoio à Criança com síndrome de Down</h2>
+                  <p className="conteudo-carrossel">Conheça o nosso novo serviço.</p>
+                  <button className="button-carrossel">SAIBA MAIS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="carousel-item" data-bs-interval="10000">
+          <div className="container">
+            <div className="row flex-nowrap  align-items-center" style={{ minHeight: '400px' }}>
+              <div className="img-carrossel col-md-6 p-0">
+                <img src={carrossel13} className="img-fluid w-100 h-100 object-fit-cover" alt="Imagem do Carrossel" style={{ objectFit: 'cover' }}/>
+              </div>
+              <div className="noticia-carrossel col-md-6 p-4">
+                <div className="conteudo-carrosel">
+                  <h2 className="titulo-carrossel">Exames Laboratoriais no Centro de Excelência</h2>
+                  <p className="conteudo-carrossel">Você sabia que agora oferecemos exames laboratoriais no nosso Centro de Excelência?</p>
+                  <button className="button-carrossel">SAIBA MAIS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="carousel-item" data-bs-interval="10000">
+          <div className="container">
+            <div className="row flex-nowrap  align-items-center" style={{ minHeight: '400px' }}>
+              <div className="img-carrossel col-md-6 p-0">
+                <img src={carrossel14} className="img-fluid w-100 h-100 object-fit-cover" alt="Imagem do Carrossel" style={{ objectFit: 'cover' }}/>
+              </div>
+              <div className="noticia-carrossel  col-md-6 p-4">
+                <div className="conteudo-carrosel">
+                  <h2 className="titulo-carrossel">Fiquem atentos com tentativas de golpe telefônico</h2>
+                  <p className="conteudo-carrossel">Alertamos sobre tentativas de golpes aplicados na cidade, dos quais clientes do Sabará também estão sendo vítimas.</p>
+                  <button className="button-carrossel">SAIBA MAIS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="carousel-item" data-bs-interval="10000">
+          <div className="container">
+            <div className="row flex-nowrap  align-items-center" style={{ minHeight: '400px' }}>
+              <div className="img-carrossel col-md-6 p-0">
+                <img src={carrossel15} className="img-fluid w-100 h-100 object-fit-cover" alt="Imagem do Carrossel" style={{ objectFit: 'cover' }}/>
+              </div>
+              <div className="noticia-carrossel col-md-6 p-4">
+                <div className="conteudo-carrosel">
+                  <h2 className="titulo-carrossel">Série de vídeos "Pediatria de A a Z"</h2>
+                  <p className="conteudo-carrossel">Nossos especialistas esclarecem as dúvidas mais comuns sobre saúde das crianças e adolescentes de um jeito simples e fácil de entender.</p>
+                  <button className="button-carrossel">SAIBA MAIS</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
   </div>
+
+  {/* Navegação do carrosel -----------------------------------------*/}
 
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -232,22 +486,20 @@ function Inicial() {
   <div className='container-areas-principal'>
 
   <div class="container-areas text-center">
-        {/* <button onClick={() => window.location.href =  'https://www.hospitalinfantilsabara.org.br/linhas-de-cuidado/aerodigestivo/'}  type="button" class="areas ">Aerodigestivo</button>
-        <button onClick={() => window.location.href =  'https://www.hospitalinfantilsabara.org.br/linhas-de-cuidado/cardiologia/'} type="button" class="areas ">Cardiologia</button>
-        <button onClick={() => window.location.href =  'https://www.hospitalinfantilsabara.org.br/linhas-de-cuidado/nefrologia/'} type="button" class="areas ">Nefrologia</button>
-        <button onClick={() => window.location.href = 'https://www.hospitalinfantilsabara.org.br/linhas-de-cuidado/neurologia/'} type="button" class="areas ">Neorologia</button>
-        <button onClick={() => window.location.href =  'https://www.hospitalinfantilsabara.org.br/linhas-de-cuidado/oncologia/'} type="button" class="areas ">Oncologia</button>
-        <button onClick={() => window.location.href =  'https://www.hospitalinfantilsabara.org.br/linhas-de-cuidado/reabilitacao-intestinal/'} type="button" class="areas">Reabilitação Intestinal</button>
-        <button onClick={() => window.location.href = 'https://www.hospitalinfantilsabara.org.br/linhas-de-cuidado/terapia-fetal-e-neonatal/'} type="button" class="areas ">Terapia Ferapia e Neonatal</button>
-     */}
-
-        <button type="button" class="areas ">Aerodigestivo</button>
-        <button type="button" class="areas ">Cardiologia</button>
-        <button type="button" class="areas ">Nefrologia</button>
-        <button type="button" class="areas ">Neorologia</button>
-        <button type="button" class="areas ">Oncologia</button>
-        <button type="button" class="areas">Reabilitação Intestinal</button>
-        <button type="button" class="areas ">Terapia Ferapia e Neonatal</button>
+        <a href="https://www.hospitalinfantilsabara.org.br/linhas-de-cuidado/aerodigestivo/">
+          <button type="button" class="areas ">Aerodigestivo</button></a>
+        <a href="https://www.hospitalinfantilsabara.org.br/linhas-de-cuidado/cardiologia/">
+          <button type="button" class="areas ">Cardiologia</button></a>
+        <a href="https://www.hospitalinfantilsabara.org.br/linhas-de-cuidado/nefrologia/">
+          <button type="button" class="areas ">Nefrologia</button></a>
+        <a href="https://www.hospitalinfantilsabara.org.br/linhas-de-cuidado/neurologia/">
+        <button type="button" class="areas ">Neorologia</button></a>
+        <a href="https://www.hospitalinfantilsabara.org.br/linhas-de-cuidado/oncologia/">
+        <button type="button" class="areas ">Oncologia</button></a>
+          <a href="https://www.hospitalinfantilsabara.org.br/linhas-de-cuidado/reabilitacao-intestinal/">
+        <button type="button" class="areas">Reabilitação Intestinal</button></a>
+        <a href="https://www.hospitalinfantilsabara.org.br/linhas-de-cuidado/terapia-fetal-e-neonatal/">
+        <button type="button" class="areas ">Terapia Ferapia e Neonatal</button></a>
     
     
     </div>
@@ -259,8 +511,8 @@ function Inicial() {
         <div className='ecom-conteudo'>
           <h2>ECMO</h2>
           <p>Tratamento para pacientes com falência cardíaca ou respiratória.</p>
-          <button className='button-ecmo'><strong>SAIBA MAIS</strong> </button>
-          {/* <button onClick={window.location.href = 'https://www.hospitalinfantilsabara.org.br/centro-de-excelencia-e-servicos/centro-de-doencas-do-coracao/o-que-tratamos/ecmo-ecls/'} className='button-ecmo'><strong>SAIBA MAIS</strong> </button> */}
+          <a href="https://www.hospitalinfantilsabara.org.br/centro-de-excelencia-e-servicos/centro-de-doencas-do-coracao/o-que-tratamos/ecmo-ecls/">
+          <button className='button-ecmo'><strong>SAIBA MAIS</strong> </button></a>
         </div>
       </div>
 
@@ -269,9 +521,8 @@ function Inicial() {
         <div className='uti-conteudo'>
           <h2>UTI</h2>
           <p>Cuidado intensivo para crianças com quadros graves.</p>
-          {/* <button onClick={window.location.href = 'https://www.hospitalinfantilsabara.org.br/unidades-e-servicos-hospitalares/unidade-de-terapia-intensiva/'} className='button-uti'><strong>SAIBA MAIS</strong> </button> */}
-          <button className='button-uti'><strong>SAIBA MAIS</strong> </button>
-
+          <a href="https://www.hospitalinfantilsabara.org.br/unidades-e-servicos-hospitalares/unidade-de-terapia-intensiva/">
+          <button className='button-uti'><strong>SAIBA MAIS</strong> </button></a>
         </div>
       </div>
     </div>
@@ -279,29 +530,27 @@ function Inicial() {
     {/* SIGLARIO ------------------------------------------------------ */}
 
     <div className='siglario'>
-    <img className='img-saglario' src={siglario} alt="" />
-
-      {/* <img onClick={window.location.href = 'https://www.hospitalinfantilsabara.org.br/wp-content/themes/sabara2020/novo-site/pdfs/siglario-sabara.pdf'}  className='img-saglario' src={siglario} alt="" /> */}
+      <img className='img-saglario' src={siglario} alt="" />
     </div>
 
   </div>
 
   
-
   {/* NOTICIAS ------------------------------------------------------ */}
   <div className='noticias'>
     <div className='utimas-noticias'>
       <div>
         <h2 className='titulo-noticia'>ÚLTIMAS NOTICIAS</h2>
-        <p>Acompanhe as novidades do <strong>Sabará Hospital Infantil</strong></p>
+        <p className='texr-not'>Acompanhe as novidades do <strong>Sabará Hospital Infantil</strong></p>
       </div>
       <button className='ver-mais'><strong> VER MAIS NOTICIAS</strong></button>
     </div>
 
-    <div class="campo-ultimas-noticias text-center">
-      <div class="row">
-          <div  class="col">
-            <img className='img-noticias' src={noticia1} alt="" />
+      <div class="midia text-center">
+        <div class="row">
+
+        <div  class="col">
+          <img className='img-noticias' src={noticia1} alt="" />
             <p className='desc-noticia'>Matéria no jornal O Globo traz especialista falando sobre os benefícios do exercício para saúde mental dos adolescentes</p>
           </div>
 
@@ -310,39 +559,45 @@ function Inicial() {
             <p className='desc-noticia'>“Cerimônia do Sino” – Episódio 4, Márcia Angelis (mãe da paciente)</p>
           </div>
 
-           <div  class="col">
-            <img className='img-noticias' src={noticia3} alt="" />
-            <p className='desc-noticia'>“A sala sensorial fez meu filho com TEA se sentir em casa”</p>
-          </div>
-
-          <div  class="col">
-            <img className='img-noticias' src={noticia4} alt="" />
-          <p className='desc-noticia'>Matéria no jornal O Globo traz especialista falando sobre os benefícios do exercício para saúde mental dos adolescentes</p>
+            <div  class="col">
+              <img className='img-noticias' src={noticia7} alt="" />
+                <p className='desc-noticia'>Canabidiol pode melhorar a qualidade de vida de crianças com epilepsia resistente a medicamentos</p>
             </div>
+
+            <div  class="col">
+              <img className='img-noticias' src={noticia4} alt="" />
+                <p className='desc-noticia'>Matéria no jornal O Globo traz especialista falando sobre os benefícios do exercício para saúde mental dos adolescentes</p>
+            </div>
+
+        </div>
+      </div>
+
+      <div class="midia text-center">
+        <div class="row">
 
           <div  class="col">
             <img className='img-noticias' src={noticia5} alt="" />
-            <p className='desc-noticia'>“Cerimônia do Sino” – Episódio 2, Giovanna Pombani</p>
-          </div>
+              <p className='desc-noticia'>“Cerimônia do Sino” – Episódio 2, Giovanna Pombani</p>
+            </div>
 
-          <div  class="col">
-            <img className='img-noticias' src={noticia6} alt="" />
-            <p className='desc-noticia'>Dra. Renata Mazzotti Zampol, gerente médica da Unidade de Internação do Sabará Hospital Infantil, fala sobre síndrome de Down no Blog de Saúde da Veja</p>
-          </div>
+            <div  class="col">
+              <img className='img-noticias' src={noticia6} alt="" />
+                <p className='desc-noticia'>Dra. Renata Mazzotti Zampol, gerente médica da Unidade de Internação do Sabará Hospital Infantil, fala sobre síndrome de Down no Blog de Saúde da Veja</p>
+            </div>
 
-          <div  class="col">
-            <img className='img-noticias' src={noticia7} alt="" />
-            <p className='desc-noticia'>Canabidiol pode melhorar a qualidade de vida de crianças com epilepsia resistente a medicamentos</p>
-          </div>
+              <div  class="col">
+                <img className='img-noticias' src={noticia5} alt="" />
+                <p className='desc-noticia'>“Cerimônia do Sino” – Episódio 2, Giovanna Pombani</p>
+              </div>
 
-          <div  class="col">
-            <img className='img-noticias' src={noticia8} alt="" />
-            <p className='desc-noticia'>Sabará investe em novos equipamentos e amplia Serviço de Cardiologia Pediátrica</p>
-          </div>
+              <div  class="col">
+                <img className='img-noticias' src={noticia8} alt="" />
+                  <p className='desc-noticia'>Sabará investe em novos equipamentos e amplia Serviço de Cardiologia Pediátrica</p>
+              </div>
 
+        </div>
       </div>
-    </div>
-
+      
     <div className='utimas-noticias'>
       <div>
         <h2 className='titulo-noticia'>TESTEMUNHAIS</h2>
@@ -446,9 +701,10 @@ function Inicial() {
       </div>
       </div>
   </div>
-  {/* </div> */}
+ 
     </>
   )
 }
+
 
 export default Inicial
