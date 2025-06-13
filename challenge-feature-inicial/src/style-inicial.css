@@ -1,7 +1,18 @@
-.container-espacamento, .container-menu-principal, .conteudo-inicial{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+.container-espacamento, .container-menu-principal, .info-agen{
     padding-left: 110px;
     padding-right: 110px;
-}
+} 
 
 /* menu superior -----------------------------------------------------*/
 .container-menu{
@@ -37,7 +48,6 @@
 .menu-principal:hover .dropdown-menu {
     display: block;
     margin-top: 0; 
-    /* background-color: red; */
     color: white;
 }
 
@@ -46,21 +56,16 @@
 }
 
 .container-menu-sabara{
-    /* left: 110px; 
-    right: 110px;  */
     gap: 1px;
     background-color: white; 
     color: #707070; 
     margin-top: 40px; 
-
 }
 
 .menu-principal{
     text-align: justify;
-    /* border: 1px solid rgb(232, 228, 228); */
 }
 
-/* Aplica cor branca à fonte */
 .dropdown-menu {
     background-color: red;
   }
@@ -111,11 +116,6 @@
 }
 
 /*Agendamento -----------------------------------------------------*/
-/* .conteudo-inicial{
-    background-color: #eaeaea;;
-
-} */
-
 .text-agen{
     font-size: 16px;
 }
@@ -155,10 +155,6 @@ spam{
     justify-content: center; 
 }
 
-/* .button-informacoes{
-    border: solid 1px white;
-}  */
-
 .text-agendamento{
     font-size: 13px;
     color: white;
@@ -170,7 +166,6 @@ spam{
     font-size: 14px;
     border: none;
     color: white;
-    /* Centralizar o conteudo!!!!!! */
 }  
 
 .emergencia{
@@ -204,25 +199,11 @@ spam{
 }
 
 /* Carrossel -----------------------------------------------------*/
-/* .background{
-    background-color: #cdcccf;
-} */
-
-/* .d-block{
-    width: 100px; 
-    height: 500px;
-    display: flex; 
-    align-items: center; 
-} 
-
-.carousel-inner{
-    display: flex; 
-    gap: 20px; 
-} */
-
 .carousel-inner {
   min-height: 500px;
   position: relative;
+  display: flex;
+  width: 100%;
 }
 
 .carousel{
@@ -246,23 +227,45 @@ spam{
     background-color: white;
     color: black;
     border-radius: 5px;
-
     width: 115px; 
     height: 19px;
     font-size: 14px;
 }
 
+.img-carrossel, .noticia-carrossel {
+    height: 400px;
+}
+
+.conteudo-carrosel{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center; 
+    text-align: justify;     
+    height: 100%;           
+    gap: 15px;               
+    margin-left: 45px;      
+    margin-right: 45px;     
+} 
+
+.button-carrossel{
+    width: 150px;
+    height: 35px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;     
+}
+
+/* ECMO & UTI----------------------------------------------------- */
 .container-areas {
     display: flex;
     flex-wrap: wrap;  
     gap: 5px; 
     justify-content: center; 
-    /* padding: 10px; */
     background-color: white;
     border: 10px;
-    margin-top: 54px;
 }
-  
+ 
 .areas {
     flex: 1 1 150px; 
     min-width: 150px; 
@@ -272,16 +275,13 @@ spam{
     border: none;
     width: 100%;
     height: 100px;
-    background-color: #dfdfdf;;
+    background-color: #dfdfdf;
 }
 
-/* ECMO & UTI----------------------------------------------------- */
 .linha-chamadas {
     display: flex; 
     gap: 20px; 
-    margin-top: 50px;
-
-    
+    margin-top: 50px;   
 }
   
 .ecom {
@@ -298,11 +298,8 @@ spam{
     background-color:#7db714;
     color: white;
     border-radius: 10px;
-    
 }
-
-
-  
+ 
 .img-ecmo, .img-uti {
     width: 250px; 
     height: auto;
@@ -344,7 +341,6 @@ spam{
     background-color:  #015ca9;
     height: 50px;
     color: white;
-    
 }
 
 .titulo-noticia{
@@ -362,5 +358,4 @@ spam{
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 8px;
-
 }
